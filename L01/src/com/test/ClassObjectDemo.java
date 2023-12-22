@@ -4,11 +4,16 @@ import java.util.Date;
 
 public class ClassObjectDemo {
     public static void main(String[] args) {
+
+//       We are able to access public methods declared in lecture class
+//       ,but we wouldn't able to access private methods or variables outside of the class in which it is declared.
+
        Lecture l1 = new Lecture();
        l1.setCreatedDate(new Date());
        l1.setStatus("live");
        l1.setName("L01 OOPS fundamentals");
        l1.setMentor("Shashikant");
+
 
        System.out.println(l1);
 
@@ -23,19 +28,16 @@ public class ClassObjectDemo {
        Lecture l3 = new Lecture("Harsh",new Date(),"Live","God");
        System.out.println(l3);
 
+//     Calling static variable with Class name
        System.out.println("number of objects: " + Lecture.numberOfObject);
 
-//        Variables--
-//        Local
-//        Instance
-//        Global
+//      Variables --
+//        Local - variable inside the method is a local variable
+//        Instance - variables inside the class (object variables)
+//        Global -
+//        Class - static variable inside the class is class variable.
 
-//        Access modifiers
 
-//        Public -- the code is accessible for all classes.
-//        Private -- The code is accessible only within declared class.
-//        Default -- The code is only accessible in the same package.
-//        Protected -- The code is accessible in the same package and subclasses in any outside package.
 
 
     }

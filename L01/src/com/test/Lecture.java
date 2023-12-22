@@ -7,6 +7,22 @@ public class Lecture {
     static {
         System.out.println("Exec Static block");
     }
+
+//    Encapsulation - performing Data hiding and not publically exposing the data
+//    we are defining methods which are setter and getter methods
+//    with the help of these setter and getter methods, I can add some validations in methods too!
+//    these weren't available when we directly access the data members
+
+// How to achieve Encapsulation -- declare class variables / attributes as private
+//
+//    2. By using access modifiers
+//        Public -- the code is accessible for all classes.
+//        Private -- The code is accessible only within declared class.
+//        Default -- The code is only accessible in the same package.
+//        Protected -- The code is accessible in the same package and subclasses in any outside package.
+//
+//    3. Define public getter and setter methods to access and update the value of private variable.
+
     public static Integer getNumberOfObject() {
         return numberOfObject;
     }
@@ -16,22 +32,27 @@ public class Lecture {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public Date getCreatedDate() {
+
         return createdDate;
     }
 
     public void setCreatedDate(Date createdDate) {
+
         this.createdDate = createdDate;
     }
 
     public String getStatus() {
+
         return status;
     }
 
@@ -40,10 +61,12 @@ public class Lecture {
     }
 
     public String getMentor() {
+
         return mentor;
     }
 
     public void setMentor(String mentor) {
+
         this.mentor = mentor;
     }
 
@@ -64,6 +87,7 @@ public class Lecture {
 
 //    Default constructor
     public Lecture() {
+
         numberOfObject++;
     }
 
